@@ -20,6 +20,7 @@ socket.on('localizacion',data=>{
     
     if(data === 'El usuario no tiene registrado su Ubicacion'){
         texto.innerHTML = `${data}`;
+        outputMessage.value= '';
     }else{
         outputMessage.value= `${data}`;
         texto.innerHTML  = ''
